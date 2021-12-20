@@ -4,8 +4,8 @@
 4. **My skill's:** HTML, CSS, JS, React, SQL,Git, GitHub, Network technologies.
 5. **Code Examples:** Some code examples can be found here [GitHub](https://github.com/dicreate)
 6. **Practical experience:** 
-[Wilflife(html,css,jquery)] (http://dicreate.github.io/wildlife/)
-[Virtual-piano(JS)] (https://dicreate.github.io/virtual-piano/)
-[Webovio(html, scss)] (https://dicreate.github.io/webovio/)
+[Wilflife(html,css,jquery)](http://dicreate.github.io/wildlife/)
+[Virtual-piano(JS)](https://dicreate.github.io/virtual-piano/)
+[Webovio(html, scss)](https://dicreate.github.io/webovio/)
 7. **Training:** I take a course on React and JS on udemy, and also take a course on JS / FRONT-END in The Rolling Scopes.I trained myself with the help of learn.javascript.ru and youtube channels. 
 8. **Level of English language proficiency:** A2
