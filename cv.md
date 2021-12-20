@@ -1,5 +1,5 @@
 1. **Full name:** Dmitriy Kovchugo
-2. **Email:**dkovchugo@mail.ru ,**telegram:**dkovchugo ,**github:**[dicreate](https://github.com/dicreate) , **phone:** **phone:** +375295143602    
+2. **Email:**dkovchugo@mail.ru ,**telegram:**dkovchugo ,**github:**[dicreate](https://github.com/dicreate) , **phone:** +375295143602    
 3. **A little about me:** I aim to get better every day and eventually become a valuable employee in an area where there are opportunities for self-realization. I always achieve my goals, even if it takes a very long time.
 4. **My skill's:** HTML, CSS, JS, React, SQL,Git, GitHub, Network technologies.
 5. **Code Examples:** Some code examples can be found here [GitHub](https://github.com/dicreate)
