@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+	<link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
 </head>
 <body>
 	<!--section "main" include header.
@@ -132,6 +133,83 @@
 				<script src="js/js.js"></script>
 				</div>	
 		</section>
+		<section class="code-examples">
+			<div class="wrapper">
+				<h2 class="code-examples__title">Code examples</h2>
+				<div class="code-content">
+						<div class="code-item">
+							<h3 class="code-content__title">
+								Human readable duration format
+							</h3>
+							<pre class="code-content__text">
+function formatDuration (seconds) {
+
+	let result = []
+	let years = Math.floor(seconds / 31536000)
+	let days = Math.floor((seconds - years * 31536000) / 86400)
+	let hours =  Math.floor((seconds - years * 31536000 - days * 86400) / 3600)
+	let minutes = Math.floor((seconds - years * 31536000 - days * 86400 - hours * 3600) / 60)
+	let sec = (seconds - years * 31536000 - days * 86400 - hours * 3600 - minutes * 60)
+	let clock = [years,days,hours, minutes, sec]
+	
+	if(seconds == 0){
+		return 'now'
+	}
+	
+	if(clock[0] > 0){
+	clock[0] = clock[0] > 1 ? clock[0] + ' years' : clock[0] + ' year'
+	result.push(clock[0])
+	}
+	
+	if(clock[1] > 0){
+	clock[1] = clock[1] > 1 ? clock[1] + ' days' : clock[1] + ' day'
+	result.push(clock[1])
+	}
+	
+	if(clock[2] > 0){
+	clock[2] = clock[2] > 1 ? clock[2] + ' hours' : clock[2] + ' hour'
+	result.push(clock[2])
+	}
+	
+	if(clock[3] > 0){
+	clock[3] = clock[3] > 1 ? clock[3] + ' minutes' : clock[3] + ' minute'
+	result.push(clock[3])
+	}
+	
+	if(clock[4] > 0){
+	clock[4] = clock[4] > 1 ? clock[4] + ' seconds' : clock[4] + ' second'
+	result.push(clock[4])
+	}
+	
+	if(result.length > 1){
+		result = result.map(el => el == result[result.length - 1] || el == result[result.length - 2] ? el : el + ",")
+		result[result.length - 1] = "and " + result[result.length - 1]
+	}
+	
+	return result.join(" ")
+	
+	}
+							</pre>
+						</div>
+
+						<div class="code-item">
+							<h3 class="code-content__title">
+								Last digit of a large number
+							</h3>
+							<pre class="code-content__text">
+var lastDigit = function(str1, str2){
+	if(+str2 > 0){
+		return Math.pow(str1.slice(-1), str2.slice(-2) % 4 || 4) % 10;
+		}
+	else {
+		return 1
+		}
+	}
+							</pre>
+						</div>
+					</div>
+			</div>
+		</section>
 		<section class="section-form">
 			<div class="wrapper">
 				<h2 class="section-form__title-h2" id="Contact">
@@ -156,9 +234,9 @@
 						<span>&copy;Copyright 2022 Dmitriy Kovchugo. All rights reserved</span>
 						<a href="https://rs.school/js/" class="rs-logo"><img src="./img/rss.svg" alt="rs"></a>
 						<ul class="social-network">
-							<li class="social-network__item"><a href="https://github.com/DmitriyKovchugo" class="social-network__link" target="_blank"><i class="zmdi zmdi-github"> github</i></a></li>
-							<li class="social-network__item"><a href="https://vk.com/dkovchugo" class="social-network__link" target="_blank"><i class="zmdi zmdi-vk"> vk</i></a></li>
-							<li class="social-network__item"><a href="https://www.instagram.com/dmitriy_kovchugo/" class="social-network__link" target="_blank"><i class="zmdi zmdi-instagram"> instagram</i></a></li>
+							<li class="social-network__item"><a href="https://github.com/dicreate" class="social-network__link" target="_blank"><i class="zmdi zmdi-github"> github</i></a></li>
+							<li class="social-network__item"><a href="https://vk.com/di__may" class="social-network__link" target="_blank"><i class="zmdi zmdi-vk"> vk</i></a></li>
+							<li class="social-network__item"><a href="https://www.instagram.com/_di_may/" class="social-network__link" target="_blank"><i class="zmdi zmdi-instagram"> instagram</i></a></li>
 						</ul>
 					</div>
 				</div>
